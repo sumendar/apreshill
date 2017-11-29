@@ -1,5 +1,5 @@
 #baseurl = "https://alison.rbind.io/"
-baseurl = "/"
+baseurl = "https://sumendar.netlify.com/"
 #baseurl = "/"
 title = "Alison Presmanes Hill"
 copyright = "&copy; 2017 Alison Presmanes Hill"
@@ -135,7 +135,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/apreshill"
+    link = "//twitter.com/sumendar"
 
   [[params.social]]
     icon = "google-scholar"
@@ -145,7 +145,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/apreshill"
+    link = "//github.com/sumendar"
     
   [[params.social]]
     icon = "impactstory"
@@ -165,7 +165,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "linkedin"
     icon_pack = "fa"
-    link = "https://www.linkedin.com/in/alisonpresmaneshill/"
+    link = "https://www.linkedin.com/in/sumendar/"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
