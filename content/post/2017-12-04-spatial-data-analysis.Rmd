@@ -72,6 +72,6 @@ for eg:
 
 http://example.com
 
-[my link](https://sumendar.netlify.com/html/2017-12-04-spatial-data-analysis)
-
+[my link](https://sumendar.netlify.com/post/2017-12-04-spatial-data-analysis.html)
+  
 
