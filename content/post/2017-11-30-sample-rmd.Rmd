@@ -9,51 +9,59 @@ tags:
   - blogdown
 ---
 
-##Performing Univariate Analysis
+# Importing Techniques Used in Spatial Data Analysis 
+Learning the basics of importing & exploring data in various formats in R such as **tables, Vectors & Rasters** data, then we will see how to work with this data   
+for eg: 
+
+* Setting with projection
+* dealing with time variable
+
+##Section 1
+###Importing Data in Table Format
+####Importing Data from Table (read.table)
 
 ```{r}
 # install.packages("car")
 library(car)
 ```
 
-```{r}
-data(Prestige, package = "car")
-ls()
-head(Prestige)
-```
-```{r}
-str(Prestige)
-```
+##Section 2
+##Section 3
+##Section 4
+# Data Manipulations & Data Visualisation using Descriptive statistics
+Deep understanding the basics of data analysis  
+for eg:  
+
+* exploring descrptive statistical techniques 
+* plotting & manipulating spatio temporal data 
+* Creation of static & interactive spatio temportal maps
+
+##Section 5
+##Section 6
+##Section 7
+##Section 8
+##Section 9
+# Working with Real life data, experiment & perform advanced data analysis
+
+* point pattern analysis(Using crime data in UK)
+* time series analysis (Wind speed data)
+* geo statistical interpolation (Air polution)
+* statistical & machine learning regression
+  * Random forest algorithm
+* cluster analysis Using Earthquake data
+  * k-means algorithm
+  * heirarchial clustering
+
+##Section 10
+##Section 11
+
+##Section 12
+##Section 13
+##Section 14
+##Section 15
+
+http://example.com  
+https://sumendar.netlify.com/html/2017-11-30-sample-rmd.html 
 
 
-```{r}
-mean(Prestige$income)
-mean(Prestige$income, na.rm = T)
-median(Prestige$income, na.rm = T)
-sd(Prestige$income, na.rm = T)
-var(Prestige$income, na.rm = T)
-quantile(Prestige$income, probs = c(0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.90, 0.95))
-```
-
-```{r}
-summary(Prestige)
-```
-
-```{r, eval=FALSE, include=TRUE}
-install.packages("pastecs")
-```
-
-```{r,eval=FALSE, include=TRUE}
-??pastecs
-```
-
-```{r}
-pastecs::stat.desc(Prestige)
-dim(Prestige)
-```
-
-```{r}
-library(Hmisc)
-describe(Prestige)
-```
 
