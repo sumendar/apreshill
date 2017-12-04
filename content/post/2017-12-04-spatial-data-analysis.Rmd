@@ -70,7 +70,8 @@ for eg:
 ##Section 14
 ##Section 15
 
-http://example.com  
-https://sumendar.netlify.com/post/2017-12-04-spatial-data-analysis.html
+http://example.com
+
+[my link](https://sumendar.netlify.com/html/2017-12-04-spatial-data-analysis.html)
 
 
