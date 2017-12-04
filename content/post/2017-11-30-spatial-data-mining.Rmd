@@ -1,8 +1,8 @@
 ---
-title: sample rmd
+title: Spatial Data Mining
 author: 'Sumendar karupakala'
 date: '2017-11-30'
-slug: sample-rmd
+slug: spatial-data-mining
 output:
   html_document:
     keep_md: FALSE
