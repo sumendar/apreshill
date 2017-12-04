@@ -1,8 +1,8 @@
 ---
-title: Spatial Data Mining
-author: 'Sumendar karupakala'
-date: '2017-11-30'
-slug: spatial-data-mining
+title: Spatial Data Analysis
+author: Sumendar Karupakala
+date: '2017-12-04'
+slug: spatial-data-analysis
 output:
   html_document:
     keep_md: FALSE
@@ -15,7 +15,8 @@ output:
 categories:
   - R
 tags:
-  - spatialdata
+  - spatial data
+  - spatial analysis
 ---
 
 # Importing Techniques Used in Spatial Data Analysis 
@@ -70,7 +71,6 @@ for eg:
 ##Section 15
 
 http://example.com  
-https://sumendar.netlify.com/post/2017-11-30-sample-rmd.html
-
+https://sumendar.netlify.com/post/2017-12-04-spatial-data-analysis.html
 
 
