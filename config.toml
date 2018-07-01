@@ -31,17 +31,17 @@ canonifyurls = true
   archive = "archives"
 
 [author]
-  name = "Dr. Shirin Glander"
-  bio = "Biologist turned Bioinformatician turned Data Scientist"
-  job = "Data Scientist"
-  location = "Münster, Germany"
+  name = "Sumendar Karupakala"
+  # bio = "passionate Data Science"
+  job = "Jr. Data Scientist"
+  location = "Hyderabad"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatarEmail = "shirin.glander@gmail.com"
+  gravatarEmail = "sumendar@gmail.com"
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "https://blog.codecentric.de/wp-content/blogs.dir/2/files/2017/07/shirin_glander-700x700.jpg"
+  # picture = "https://blog.codecentric.de/wp-content/blogs.dir/2/files/2017/07/shirin_glander-700x700.jpg"
   # Your Twitter username without the @. E.g : thibaudlepretre
-  twitter = "ShirinGlander"
+  twitter = "sumendar"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
   # googlePlus = "+ThibaudLepretre"
 
@@ -77,7 +77,7 @@ canonifyurls = true
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
   # url = "/#about"
   url = "/page/about/"
-[[menu.main]]
+#[[menu.main]]
   weight = 4
   identifier = "conferences_podcasts_webinars"
   name = "Hear me talk"
