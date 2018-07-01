@@ -2,282 +2,813 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Shirin&#39;s playgRound</title>
-    <link>https://shirinsplayground.netlify.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Shirin&#39;s playgRound</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://shirinsplayground.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Adversarial Attacks</title>
+      <link>/tags/adversarial-attacks/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/adversarial-attacks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ai</title>
+      <link>/tags/ai/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ai Common Sense</title>
+      <link>/tags/ai-common-sense/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ai-common-sense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Anomaly Detection</title>
-      <link>https://shirinsplayground.netlify.com/tags/anomaly-detection/</link>
+      <link>/tags/anomaly-detection/</link>
       <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/anomaly-detection/</guid>
+      <guid>/tags/anomaly-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Api</title>
+      <link>/tags/api/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Archive</title>
-      <link>https://shirinsplayground.netlify.com/tags/archive/</link>
+      <link>/tags/archive/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/archive/</guid>
+      <guid>/tags/archive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Artificial Intelligence</title>
-      <link>https://shirinsplayground.netlify.com/tags/artificial-intelligence/</link>
+      <link>/tags/artificial-intelligence/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/artificial-intelligence/</guid>
+      <guid>/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asoiaf</title>
+      <link>/tags/asoiaf/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/asoiaf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Autoencoder</title>
-      <link>https://shirinsplayground.netlify.com/tags/autoencoder/</link>
+      <link>/tags/autoencoder/</link>
       <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/autoencoder/</guid>
+      <guid>/tags/autoencoder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bias</title>
+      <link>/tags/bias/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bioinformatics</title>
+      <link>/tags/bioinformatics/</link>
+      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bioinformatics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blogdown</title>
-      <link>https://shirinsplayground.netlify.com/tags/blogdown/</link>
+      <link>/tags/blogdown/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/blogdown/</guid>
+      <guid>/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blogging</title>
-      <link>https://shirinsplayground.netlify.com/tags/blogging/</link>
+      <link>/tags/blogging/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/blogging/</guid>
+      <guid>/tags/blogging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bookdown</title>
-      <link>https://shirinsplayground.netlify.com/tags/bookdown/</link>
+      <link>/tags/bookdown/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/bookdown/</guid>
+      <guid>/tags/bookdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Business Intelligence</title>
-      <link>https://shirinsplayground.netlify.com/tags/business-intelligence/</link>
+      <link>/tags/business-intelligence/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/business-intelligence/</guid>
+      <guid>/tags/business-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Caret</title>
+      <link>/tags/caret/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/caret/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Codecentric</title>
-      <link>https://shirinsplayground.netlify.com/tags/codecentric/</link>
-      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      <link>/tags/codecentric/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/codecentric/</guid>
+      <guid>/tags/codecentric/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparative Understanding</title>
+      <link>/tags/comparative-understanding/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/comparative-understanding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Conference</title>
-      <link>https://shirinsplayground.netlify.com/tags/conference/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      <link>/tags/conference/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/conference/</guid>
+      <guid>/tags/conference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Science</title>
-      <link>https://shirinsplayground.netlify.com/tags/data-science/</link>
-      <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+      <link>/tags/data-science/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/data-science/</guid>
+      <guid>/tags/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data2day</title>
-      <link>https://shirinsplayground.netlify.com/tags/data2day/</link>
+      <link>/tags/data2day/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/data2day/</guid>
+      <guid>/tags/data2day/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>/tags/deep-learning/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fairness</title>
+      <link>/tags/fairness/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fairness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast Ai</title>
+      <link>/tags/fast-ai/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fast-ai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Flexdashboard</title>
-      <link>https://shirinsplayground.netlify.com/tags/flexdashboard/</link>
+      <link>/tags/flexdashboard/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/flexdashboard/</guid>
+      <guid>/tags/flexdashboard/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fraud Detection</title>
-      <link>https://shirinsplayground.netlify.com/tags/fraud-detection/</link>
+      <link>/tags/fraud-detection/</link>
       <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/fraud-detection/</guid>
+      <guid>/tags/fraud-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Game of Thrones</title>
+      <link>/tags/game-of-thrones/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/game-of-thrones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genetic Algorithm</title>
+      <link>/tags/genetic-algorithm/</link>
+      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/genetic-algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ggplot</title>
-      <link>https://shirinsplayground.netlify.com/tags/ggplot/</link>
+      <link>/tags/ggplot/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/ggplot/</guid>
+      <guid>/tags/ggplot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ggplot2</title>
+      <link>/tags/ggplot2/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ggraph</title>
+      <link>/tags/ggraph/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggraph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>https://shirinsplayground.netlify.com/tags/github/</link>
+      <link>/tags/github/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/github/</guid>
+      <guid>/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gitlab</title>
-      <link>https://shirinsplayground.netlify.com/tags/gitlab/</link>
+      <link>/tags/gitlab/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/gitlab/</guid>
+      <guid>/tags/gitlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>/tags/google/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gradient Boosting</title>
+      <link>/tags/gradient-boosting/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/gradient-boosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Greta</title>
+      <link>/tags/greta/</link>
+      <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/greta/</guid>
       <description></description>
     </item>
     
     <item>
       <title>H2o</title>
-      <link>https://shirinsplayground.netlify.com/tags/h2o/</link>
-      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      <link>/tags/h2o/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/h2o/</guid>
+      <guid>/tags/h2o/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Horovod</title>
+      <link>/tags/horovod/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/horovod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Classification</title>
+      <link>/tags/image-classification/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/image-classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Imputation</title>
+      <link>/tags/imputation/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/imputation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intelligence</title>
+      <link>/tags/intelligence/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jax</title>
+      <link>/tags/jax/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/jax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keras</title>
+      <link>/tags/keras/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/keras/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lime</title>
+      <link>/tags/lime/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/lime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M3</title>
+      <link>/tags/m3/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/m3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>https://shirinsplayground.netlify.com/tags/machine-learning/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/machine-learning/</guid>
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meetup</title>
+      <link>/tags/meetup/</link>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/meetup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mice</title>
+      <link>/tags/mice/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Michelangelo</title>
+      <link>/tags/michelangelo/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/michelangelo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Missing Data</title>
+      <link>/tags/missing-data/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/missing-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Moral Patiency</title>
+      <link>/tags/moral-patiency/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/moral-patiency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Münster</title>
+      <link>/tags/m%C3%BCnster/</link>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/m%C3%BCnster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>/tags/network/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/network/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network Analysis</title>
-      <link>https://shirinsplayground.netlify.com/tags/network-analysis/</link>
+      <link>/tags/network-analysis/</link>
       <pubDate>Fri, 28 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/network-analysis/</guid>
+      <guid>/tags/network-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Nets</title>
+      <link>/tags/neural-nets/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/neural-nets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neuroevolution</title>
+      <link>/tags/neuroevolution/</link>
+      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/neuroevolution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neuroscience</title>
+      <link>/tags/neuroscience/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/neuroscience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Novelty Search</title>
+      <link>/tags/novelty-search/</link>
+      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/novelty-search/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pca</title>
-      <link>https://shirinsplayground.netlify.com/tags/pca/</link>
+      <link>/tags/pca/</link>
       <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/pca/</guid>
+      <guid>/tags/pca/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pkgnet</title>
+      <link>/tags/pkgnet/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pkgnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plumber</title>
+      <link>/tags/plumber/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/plumber/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Podcast</title>
+      <link>/tags/podcast/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/podcast/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Predictive Maintenance</title>
-      <link>https://shirinsplayground.netlify.com/tags/predictive-maintenance/</link>
+      <link>/tags/predictive-maintenance/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/predictive-maintenance/</guid>
+      <guid>/tags/predictive-maintenance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predictive Processing</title>
+      <link>/tags/predictive-processing/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/predictive-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Purrr</title>
+      <link>/tags/purrr/</link>
+      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/purrr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pytorch</title>
+      <link>/tags/pytorch/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pytorch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>https://shirinsplayground.netlify.com/tags/r-markdown/</link>
+      <link>/tags/r-markdown/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/r-markdown/</guid>
+      <guid>/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random Forest</title>
+      <link>/tags/random-forest/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/random-forest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning</title>
+      <link>/tags/reinforcement-learning/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reproducibility</title>
+      <link>/tags/reproducibility/</link>
+      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reproducibility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scalability</title>
-      <link>https://shirinsplayground.netlify.com/tags/scalability/</link>
+      <link>/tags/scalability/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/scalability/</guid>
+      <guid>/tags/scalability/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shiny</title>
-      <link>https://shirinsplayground.netlify.com/tags/shiny/</link>
-      <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+      <link>/tags/shiny/</link>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/shiny/</guid>
+      <guid>/tags/shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sketchnotes</title>
+      <link>/tags/sketchnotes/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sketchnotes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>State Representation</title>
+      <link>/tags/state-representation/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/state-representation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>T Sne</title>
-      <link>https://shirinsplayground.netlify.com/tags/t-sne/</link>
+      <link>/tags/t-sne/</link>
       <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/t-sne/</guid>
+      <guid>/tags/t-sne/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tensor</title>
+      <link>/tags/tensor/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tensor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tensorflow</title>
+      <link>/tags/tensorflow/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tensorflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Text Analysis</title>
-      <link>https://shirinsplayground.netlify.com/tags/text-analysis/</link>
+      <link>/tags/text-analysis/</link>
       <pubDate>Fri, 28 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/text-analysis/</guid>
+      <guid>/tags/text-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theano</title>
+      <link>/tags/theano/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/theano/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tidygraph</title>
+      <link>/tags/tidygraph/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidygraph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tidyverse</title>
-      <link>https://shirinsplayground.netlify.com/tags/tidyverse/</link>
-      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      <link>/tags/tidyverse/</link>
+      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/tidyverse/</guid>
+      <guid>/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tpu</title>
+      <link>/tags/tpu/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twimlai</title>
+      <link>/tags/twimlai/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/twimlai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Twitter</title>
-      <link>https://shirinsplayground.netlify.com/tags/twitter/</link>
+      <link>/tags/twitter/</link>
       <pubDate>Fri, 28 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/twitter/</guid>
+      <guid>/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>/tags/video/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/video/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Webinar</title>
-      <link>https://shirinsplayground.netlify.com/tags/webinar/</link>
+      <link>/tags/webinar/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shirinsplayground.netlify.com/tags/webinar/</guid>
+      <guid>/tags/webinar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Workshop</title>
+      <link>/tags/workshop/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/workshop/</guid>
       <description></description>
     </item>
     

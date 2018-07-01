@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image Classification on Shirin&#39;s playgRound</title>
+    <link>/tags/image-classification/</link>
+    <description>Recent content in Image Classification on Shirin&#39;s playgRound</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/image-classification/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Explaining Keras image classification models with lime</title>
+      <link>/2018/06/keras_fruits_lime/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/06/keras_fruits_lime/</guid>
+      <description>Last week I published a blog post about how easy it is to train image classification models with Keras.
+What I did not show in that post was how to use the model for making predictions. This, I will do here. But predictions alone are boring, so I’m adding explanations for the predictions using the lime package.
+I have already written a few blog posts (here, here and here) about LIME and have given talks (here and here) about it, too.</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s that easy! Image classification with keras in roughly 100 lines of code.</title>
+      <link>/2018/06/keras_fruits/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/06/keras_fruits/</guid>
+      <description>I’ve been using keras and TensorFlow for a while now - and love its simplicity and straight-forward way to modeling. As part of the latest update to my Workshop about deep learning with R and keras I’ve added a new example analysis:
+Building an image classifier to differentiate different types of fruits
+And I was (again) suprised how fast and easy it was to build the model; it took not even half an hour and only around 100 lines of code (counting only the main code; for this post I added comments and line breaks to make it easier to read)!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -21,9 +21,9 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.27 with theme Tranquilpeak 0.4.1-BETA">
+    <meta name="generator" content="Hugo 0.40.1 with theme Tranquilpeak 0.4.1-BETA">
     <title>How to combine point and boxplots in timeline charts with ggplot2 facets</title>
-    <meta name="author" content="Dr. Shirin Glander">
+    <meta name="author" content="Sumendar Karupakala">
     <meta name="keywords" content=", R">
 
     <link rel="icon" href="img/favicon.png">
@@ -43,7 +43,7 @@ Because I work with the tidyverse, I wanted to produce these plots with ggplot2.
     <meta name="twitter:description" content="In a recent project, I was looking to plot data from different variables along the same time axis. The difficulty was, that some of these variables I wanted to have as point plots, while others I wanted as box-plots.
 Because I work with the tidyverse, I wanted to produce these plots with ggplot2. Faceting was the obvious first step but it took me quite a while to figure out how to best combine facets with point plots (where I have one value per time point) with and box-plots (where I have multiple values per time point).">
     
-      <meta name="twitter:creator" content="@ShirinGlander">
+      <meta name="twitter:creator" content="@sumendar">
     
     
 
@@ -51,7 +51,7 @@ Because I work with the tidyverse, I wanted to produce these plots with ggplot2.
     
 
     
-      <meta property="og:image" content="//www.gravatar.com/avatar/7f7f818e55624edfef8aa93860a1a3d4?s=640">
+      <meta property="og:image" content="//www.gravatar.com/avatar/f816f6a3f5b14dac82865affafc1bed5?s=640">
     
 
     
@@ -90,7 +90,7 @@ ga('send', 'pageview');
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="4">
+      <header id="header" data-behavior="5">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="/">Shirin&#39;s playgRound</a>
@@ -103,25 +103,23 @@ ga('send', 'pageview');
     
     
       
-        <img class="header-picture" src="//www.gravatar.com/avatar/7f7f818e55624edfef8aa93860a1a3d4?s=90" alt="Author&#39;s picture" />
+        <img class="header-picture" src="//www.gravatar.com/avatar/f816f6a3f5b14dac82865affafc1bed5?s=90" alt="Author&#39;s picture" />
       
     
     </a>
   
 </header>
 
-      <nav id="sidebar" data-behavior="4">
+      <nav id="sidebar" data-behavior="5">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
         <h1 class="sidebar-profile-title">How to combine point and boxplots in timeline charts with ggplot2 facets</h1>
         <a href="https://blog.feedspot.com/r_programming_blogs/" rel="nofollow" title="R Programming Blogs"><img alt="R Programming Blogs" src="https://blog.feedspot.com/wp-content/uploads/2018/04/r_program_216px.png?x20694"/></a>
         <a href="/#about">
-          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/7f7f818e55624edfef8aa93860a1a3d4?s=110" alt="Author&#39;s picture" />
+          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/f816f6a3f5b14dac82865affafc1bed5?s=110" alt="Author&#39;s picture" />
         </a>
-        <h4 class="sidebar-profile-name">Dr. Shirin Glander</h4>
-        
-          <h5 class="sidebar-profile-bio">Biologist turned Bioinformatician turned Data Scientist</h5>
+        <h4 class="sidebar-profile-name">Sumendar Karupakala</h4>
         
       </div>
     
@@ -174,16 +172,6 @@ ga('send', 'pageview');
       <i class="sidebar-button-icon fa fa-lg fa-question"></i>
       
       <span class="sidebar-button-desc">About</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/page/conferences_podcasts_webinars/">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-bullhorn"></i>
-      
-      <span class="sidebar-button-desc">Hear me talk</span>
     </a>
   </li>
 
@@ -241,60 +229,10 @@ ga('send', 'pageview');
     </a>
   </li>
 
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://www.xing.com/profile/Shirin_Glander">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-xing"></i>
-      
-      <span class="sidebar-button-desc">Xing</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://www.meetup.com/Munster-R-Users-Group">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-meetup"></i>
-      
-      <span class="sidebar-button-desc">MünsteR</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://www.r-bloggers.com/">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-book"></i>
-      
-      <span class="sidebar-button-desc">R-bloggers</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://www.r-users.com/">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-book"></i>
-      
-      <span class="sidebar-button-desc">R-users</span>
-    </a>
-  </li>
-
 
     </ul>
     <ul class="sidebar-buttons">
       
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/index.xml">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
-      
-      <span class="sidebar-button-desc">RSS</span>
-    </a>
-  </li>
-
 
     </ul>
   </div>
@@ -302,7 +240,7 @@ ga('send', 'pageview');
 
       
 
-      <div id="main" data-behavior="4"
+      <div id="main" data-behavior="5"
         class="
                hasCoverMetaOut
                ">
@@ -354,13 +292,13 @@ fake_data &lt;- data.frame(time = dates,
                         var2 = runif(length(dates))) %&gt;%
   sample_frac(size = 0.33)
 head(fake_data)</code></pre>
-<pre><code>##                   time    var1_1    var1_2     var1_3      var2
-## 51 2017-10-01 09:30:00 0.4534363 0.9947001 0.07223936 0.8891859
-## 35 2017-10-01 08:42:00 0.4260230 0.5613454 0.77475368 0.5780837
-## 3  2017-10-01 07:06:00 0.0871770 0.2824280 0.97726978 0.4705974
-## 59 2017-10-01 09:54:00 0.6824320 0.9735636 0.67654248 0.4235517
-## 5  2017-10-01 07:12:00 0.7979666 0.5857256 0.03911439 0.6918448
-## 52 2017-10-01 09:33:00 0.7537796 0.3054030 0.61354248 0.5045606</code></pre>
+<pre><code>##                   time    var1_1     var1_2     var1_3      var2
+## 35 2017-10-01 08:42:00 0.4939452 0.50189825 0.49361217 0.6204279
+## 23 2017-10-01 08:06:00 0.6602952 0.85605313 0.80353291 0.7910091
+## 43 2017-10-01 09:06:00 0.2941883 0.74727671 0.81702401 0.7430302
+## 54 2017-10-01 09:39:00 0.7007880 0.81319990 0.44825405 0.2690719
+## 68 2017-10-01 10:21:00 0.9184325 0.05322321 0.54907885 0.3316975
+## 15 2017-10-01 07:42:00 0.8062689 0.06448495 0.07372101 0.7611207</code></pre>
 <p>Here, variable 1 (<code>var1</code>) has three measurements per time point, while variable 2 (<code>var2</code>) has one.</p>
 <p>First, for plotting with ggplot2 we want our data in a tidy long format. I also add another column for faceting that groups the variables from <code>var1</code> together.</p>
 <pre class="r"><code>fake_data_long &lt;- fake_data %&gt;%
@@ -368,12 +306,12 @@ head(fake_data)</code></pre>
   mutate(facet = ifelse(x %in% c(&quot;var1_1&quot;, &quot;var1_2&quot;, &quot;var1_3&quot;), &quot;var1&quot;, x))
 head(fake_data_long)</code></pre>
 <pre><code>##                  time      x         y facet
-## 1 2017-10-01 09:30:00 var1_1 0.4534363  var1
-## 2 2017-10-01 08:42:00 var1_1 0.4260230  var1
-## 3 2017-10-01 07:06:00 var1_1 0.0871770  var1
-## 4 2017-10-01 09:54:00 var1_1 0.6824320  var1
-## 5 2017-10-01 07:12:00 var1_1 0.7979666  var1
-## 6 2017-10-01 09:33:00 var1_1 0.7537796  var1</code></pre>
+## 1 2017-10-01 08:42:00 var1_1 0.4939452  var1
+## 2 2017-10-01 08:06:00 var1_1 0.6602952  var1
+## 3 2017-10-01 09:06:00 var1_1 0.2941883  var1
+## 4 2017-10-01 09:39:00 var1_1 0.7007880  var1
+## 5 2017-10-01 10:21:00 var1_1 0.9184325  var1
+## 6 2017-10-01 07:42:00 var1_1 0.8062689  var1</code></pre>
 <p>Now, we can plot this the following way:</p>
 <ul>
 <li>facet by variable</li>
@@ -392,45 +330,42 @@ head(fake_data_long)</code></pre>
                aes(x = time, y = y, group = time))</code></pre>
 <p><img src="/post/2017-11-18-combine_point_boxplot_ggplot_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 3.4.3 (2017-11-30)
-## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS High Sierra 10.13.4
+<pre><code>## R version 3.5.0 (2018-04-23)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 7 x64 (build 7600)
 ## 
 ## Matrix products: default
-## BLAS: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRblas.0.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
-## [1] de_DE.UTF-8/de_DE.UTF-8/de_DE.UTF-8/C/de_DE.UTF-8/de_DE.UTF-8
+## [1] LC_COLLATE=English_United States.1252 
+## [2] LC_CTYPE=English_United States.1252   
+## [3] LC_MONETARY=English_United States.1252
+## [4] LC_NUMERIC=C                          
+## [5] LC_TIME=English_United States.1252    
 ## 
 ## attached base packages:
-## [1] methods   stats     graphics  grDevices utils     datasets  base     
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] bindrcpp_0.2       forcats_0.3.0      stringr_1.3.0     
-##  [4] dplyr_0.7.4        purrr_0.2.4        readr_1.1.1       
-##  [7] tidyr_0.8.0        tibble_1.4.2       ggplot2_2.2.1.9000
-## [10] tidyverse_1.2.1   
+##  [1] bindrcpp_0.2.2  forcats_0.3.0   stringr_1.3.1   dplyr_0.7.5    
+##  [5] purrr_0.2.4     readr_1.1.1     tidyr_0.8.1     tibble_1.4.2   
+##  [9] ggplot2_2.2.1   tidyverse_1.2.1
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] tidyselect_0.2.4  xfun_0.1          reshape2_1.4.3   
-##  [4] haven_1.1.1       lattice_0.20-35   colorspace_1.3-2 
-##  [7] htmltools_0.3.6   yaml_2.1.17       rlang_0.2.0.9000 
-## [10] pillar_1.2.1      withr_2.1.1.9000  foreign_0.8-69   
-## [13] glue_1.2.0        modelr_0.1.1      readxl_1.0.0     
-## [16] bindr_0.1         plyr_1.8.4        munsell_0.4.3    
-## [19] blogdown_0.5      gtable_0.2.0      cellranger_1.1.0 
-## [22] rvest_0.3.2       psych_1.7.8       evaluate_0.10.1  
-## [25] labeling_0.3      knitr_1.20        parallel_3.4.3   
-## [28] broom_0.4.3       Rcpp_0.12.15      backports_1.1.2  
-## [31] scales_0.5.0.9000 jsonlite_1.5      mnormt_1.5-5     
-## [34] hms_0.4.1         digest_0.6.15     stringi_1.1.6    
-## [37] bookdown_0.7      grid_3.4.3        rprojroot_1.3-2  
-## [40] cli_1.0.0         tools_3.4.3       magrittr_1.5     
-## [43] lazyeval_0.2.1    crayon_1.3.4      pkgconfig_2.0.1  
-## [46] xml2_1.2.0        lubridate_1.7.3   assertthat_0.2.0 
-## [49] rmarkdown_1.8     httr_1.3.1        rstudioapi_0.7   
-## [52] R6_2.2.2          nlme_3.1-131.1    compiler_3.4.3</code></pre>
+##  [1] tidyselect_0.2.4 xfun_0.1         reshape2_1.4.3   haven_1.1.1     
+##  [5] lattice_0.20-35  colorspace_1.3-2 htmltools_0.3.6  yaml_2.1.19     
+##  [9] rlang_0.2.0      pillar_1.2.3     foreign_0.8-70   glue_1.2.0      
+## [13] modelr_0.1.2     readxl_1.1.0     bindr_0.1.1      plyr_1.8.4      
+## [17] munsell_0.4.3    blogdown_0.6     gtable_0.2.0     cellranger_1.1.0
+## [21] rvest_0.3.2      psych_1.8.4      evaluate_0.10.1  labeling_0.3    
+## [25] knitr_1.20       parallel_3.5.0   broom_0.4.4      Rcpp_0.12.17    
+## [29] backports_1.1.2  scales_0.5.0     jsonlite_1.5     mnormt_1.5-5    
+## [33] hms_0.4.2        digest_0.6.15    stringi_1.1.7    bookdown_0.7    
+## [37] grid_3.5.0       rprojroot_1.3-2  cli_1.0.0        tools_3.5.0     
+## [41] magrittr_1.5     lazyeval_0.2.1   crayon_1.3.4     pkgconfig_2.0.1 
+## [45] xml2_1.2.0       lubridate_1.7.4  assertthat_0.2.0 rmarkdown_1.9   
+## [49] httr_1.3.1       rstudioapi_0.7   R6_2.2.2         nlme_3.1-137    
+## [53] compiler_3.5.0</code></pre>
 
               
             </div>
@@ -529,12 +464,12 @@ head(fake_data_long)</code></pre>
         </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2018 Dr. Shirin Glander. All Rights Reserved
+    &copy; 2018 Sumendar Karupakala. All Rights Reserved
   </span>
 </footer>
 
       </div>
-      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
         
   <div class="post-actions-wrap">
       <nav >
@@ -603,7 +538,7 @@ head(fake_data_long)</code></pre>
 
 
       </div>
-      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
   <i id="btn-close-shareoptions" class="fa fa-close"></i>
   <ul class="share-options">
     
@@ -636,24 +571,22 @@ head(fake_data_long)</code></pre>
       <i class="fa fa-remove"></i>
     </div>
     
-      <img id="about-card-picture" src="//www.gravatar.com/avatar/7f7f818e55624edfef8aa93860a1a3d4?s=110" alt="Author&#39;s picture" />
+      <img id="about-card-picture" src="//www.gravatar.com/avatar/f816f6a3f5b14dac82865affafc1bed5?s=110" alt="Author&#39;s picture" />
     
-    <h4 id="about-card-name">Dr. Shirin Glander</h4>
-    
-      <div id="about-card-bio">Biologist turned Bioinformatician turned Data Scientist</div>
+    <h4 id="about-card-name">Sumendar Karupakala</h4>
     
     
       <div id="about-card-job">
         <i class="fa fa-briefcase"></i>
         <br/>
-        Data Scientist
+        Jr. Data Scientist
       </div>
     
     
       <div id="about-card-location">
         <i class="fa fa-map-marker"></i>
         <br/>
-        Münster, Germany
+        Hyderabad
       </div>
     
   </div>
@@ -879,7 +812,7 @@ Sketchnotes from TWiMLAI talk: Adversarial Attacks Against Reinforcement Learnin
          data-message-zero="no post found"
          data-message-one="1 post found"
          data-message-other="{n} posts found">
-         48 posts found
+         47 posts found
       </p>
     </div>
   </div>
@@ -929,7 +862,7 @@ $(document).ready(function() {
             return;
           }
           var d = document, s = d.createElement('script');
-          var disqus_shortname = 'shirinsplayground';
+          var disqus_shortname = 'sumendar';
           s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 
           s.setAttribute('data-timestamp', +new Date());

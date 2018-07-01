@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gradient Boosting on Shirin&#39;s playgRound</title>
+    <link>/tags/gradient-boosting/</link>
+    <description>Recent content in Gradient Boosting on Shirin&#39;s playgRound</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/gradient-boosting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Code for Workshop: Introduction to Machine Learning with R</title>
+      <link>/2018/06/intro_to_ml_workshop_heidelberg/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/06/intro_to_ml_workshop_heidelberg/</guid>
+      <description>These are the slides from my workshop: Introduction to Machine Learning with R which I gave at the University of Heidelberg, Germany on June 28th 2018. The entire code accompanying the workshop can be found below the video.
+The workshop covered the basics of machine learning. With an example dataset I went through a standard machine learning workflow in R with the packages caret and h2o:
+ reading in data exploratory data analysis missingness feature engineering training and test split model training with Random Forests, Gradient Boosting, Neural Nets, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

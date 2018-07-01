@@ -21,9 +21,9 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.27 with theme Tranquilpeak 0.4.1-BETA">
+    <meta name="generator" content="Hugo 0.40.1 with theme Tranquilpeak 0.4.1-BETA">
     <title>Explaining Predictions of Machine Learning Models with LIME - Münster Data Science Meetup</title>
-    <meta name="author" content="Dr. Shirin Glander">
+    <meta name="author" content="Sumendar Karupakala">
     <meta name="keywords" content=", R">
 
     <link rel="icon" href="img/favicon.png">
@@ -52,7 +52,7 @@ My sketchnotes were collected from these two podcasts:
  https://twimlai.com/twiml-talk-7-carlos-guestrin-explaining-predictions-machine-learning-models/ https://dataskeptic.com/blog/episodes/2016/trusting-machine-learning-models-with-lime  Sketchnotes: TWiML Talk #7 with Carlos Guestrin – Explaining the Predictions of Machine Learning Models &amp; Data Skeptic Podcast - Trusting Machine Learning Models with Lime
   Example Code  the following libraries were loaded:  library(tidyverse) # for tidy data analysis library(farff) # for reading arff file library(missForest) # for imputing missing values library(dummies) # for creating dummy variables library(caret) # for modeling library(lime) # for explaining predictions Data The Chronic Kidney Disease dataset was downloaded from UC Irvine’s Machine Learning repository: http://archive.">
     
-      <meta name="twitter:creator" content="@ShirinGlander">
+      <meta name="twitter:creator" content="@sumendar">
     
     
 
@@ -60,7 +60,7 @@ My sketchnotes were collected from these two podcasts:
     
 
     
-      <meta property="og:image" content="//www.gravatar.com/avatar/7f7f818e55624edfef8aa93860a1a3d4?s=640">
+      <meta property="og:image" content="//www.gravatar.com/avatar/f816f6a3f5b14dac82865affafc1bed5?s=640">
     
 
     
@@ -77,7 +77,7 @@ My sketchnotes were collected from these two podcasts:
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
     
     
-    <link rel="stylesheet" href="/css/style-hbs5om8csx9a8yrv5hnhpi2qqdv4ykuslajwbramhqxvleqbfklxgek50hye.min.css" />
+    <link rel="stylesheet" href="https://sumendar.netlify.com/css/style-hbs5om8csx9a8yrv5hnhpi2qqdv4ykuslajwbramhqxvleqbfklxgek50hye.min.css" />
     
     
 
@@ -99,38 +99,36 @@ ga('send', 'pageview');
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="4">
+      <header id="header" data-behavior="5">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="/">Shirin&#39;s playgRound</a>
+    <a class="header-title-link" href="https://sumendar.netlify.com/">Shirin&#39;s playgRound</a>
   </div>
   
     
       <a class="header-right-picture "
-         href="/#about">
+         href="https://sumendar.netlify.com/#about">
     
     
     
       
-        <img class="header-picture" src="//www.gravatar.com/avatar/7f7f818e55624edfef8aa93860a1a3d4?s=90" alt="Author&#39;s picture" />
+        <img class="header-picture" src="//www.gravatar.com/avatar/f816f6a3f5b14dac82865affafc1bed5?s=90" alt="Author&#39;s picture" />
       
     
     </a>
   
 </header>
 
-      <nav id="sidebar" data-behavior="4">
+      <nav id="sidebar" data-behavior="5">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
         <h1 class="sidebar-profile-title">Explaining Predictions of Machine Learning Models with LIME - Münster Data Science Meetup</h1>
         <a href="https://blog.feedspot.com/r_programming_blogs/" rel="nofollow" title="R Programming Blogs"><img alt="R Programming Blogs" src="https://blog.feedspot.com/wp-content/uploads/2018/04/r_program_216px.png?x20694"/></a>
-        <a href="/#about">
-          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/7f7f818e55624edfef8aa93860a1a3d4?s=110" alt="Author&#39;s picture" />
+        <a href="https://sumendar.netlify.com/#about">
+          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/f816f6a3f5b14dac82865affafc1bed5?s=110" alt="Author&#39;s picture" />
         </a>
-        <h4 class="sidebar-profile-name">Dr. Shirin Glander</h4>
-        
-          <h5 class="sidebar-profile-bio">Biologist turned Bioinformatician turned Data Scientist</h5>
+        <h4 class="sidebar-profile-name">Sumendar Karupakala</h4>
         
       </div>
     
@@ -138,7 +136,7 @@ ga('send', 'pageview');
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/">
+      <a class="sidebar-button-link " href="https://sumendar.netlify.com/">
     
       <i class="sidebar-button-icon fa fa-lg fa-home"></i>
       
@@ -148,7 +146,7 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/archives/">
+      <a class="sidebar-button-link " href="https://sumendar.netlify.com/archives/">
     
       <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
       
@@ -158,7 +156,7 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/categories/">
+      <a class="sidebar-button-link " href="https://sumendar.netlify.com/categories/">
     
       <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
       
@@ -168,7 +166,7 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/tags/">
+      <a class="sidebar-button-link " href="https://sumendar.netlify.com/tags/">
     
       <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
       
@@ -178,21 +176,11 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/page/about/">
+      <a class="sidebar-button-link " href="https://sumendar.netlify.com/page/about/">
     
       <i class="sidebar-button-icon fa fa-lg fa-question"></i>
       
       <span class="sidebar-button-desc">About</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/page/conferences_podcasts_webinars/">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-bullhorn"></i>
-      
-      <span class="sidebar-button-desc">Hear me talk</span>
     </a>
   </li>
 
@@ -202,7 +190,7 @@ ga('send', 'pageview');
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://shiring.github.io/">
+      <a class="sidebar-button-link " href="https://shiring.github.io/" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
       
@@ -212,7 +200,7 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://github.com/ShirinG">
+      <a class="sidebar-button-link " href="https://github.com/ShirinG" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-github"></i>
       
@@ -222,7 +210,7 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://www.linkedin.com/in/shirin-glander-01120881/">
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/shirin-glander-01120881/" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
       
@@ -232,7 +220,7 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://stackoverflow.com/users/6623620/shirin-glander">
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/6623620/shirin-glander" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
       
@@ -242,7 +230,7 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://twitter.com/ShirinGlander">
+      <a class="sidebar-button-link " href="https://twitter.com/ShirinGlander" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
       
@@ -250,60 +238,10 @@ ga('send', 'pageview');
     </a>
   </li>
 
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://www.xing.com/profile/Shirin_Glander">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-xing"></i>
-      
-      <span class="sidebar-button-desc">Xing</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://www.meetup.com/Munster-R-Users-Group">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-meetup"></i>
-      
-      <span class="sidebar-button-desc">MünsteR</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://www.r-bloggers.com/">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-book"></i>
-      
-      <span class="sidebar-button-desc">R-bloggers</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://www.r-users.com/">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-book"></i>
-      
-      <span class="sidebar-button-desc">R-users</span>
-    </a>
-  </li>
-
 
     </ul>
     <ul class="sidebar-buttons">
       
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/index.xml">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
-      
-      <span class="sidebar-button-desc">RSS</span>
-    </a>
-  </li>
-
 
     </ul>
   </div>
@@ -311,7 +249,7 @@ ga('send', 'pageview');
 
       
 
-      <div id="main" data-behavior="4"
+      <div id="main" data-behavior="5"
         class="
                hasCoverMetaOut
                ">
@@ -338,13 +276,13 @@ ga('send', 'pageview');
   
     <span>in</span>
     
-      <a class="category-link" href="/categories/r">R</a>, 
+      <a class="category-link" href="https://sumendar.netlify.com/categories/r">R</a>, 
     
-      <a class="category-link" href="/categories/python">Python</a>, 
+      <a class="category-link" href="https://sumendar.netlify.com/categories/python">Python</a>, 
     
-      <a class="category-link" href="/categories/sketchnotes">sketchnotes</a>, 
+      <a class="category-link" href="https://sumendar.netlify.com/categories/sketchnotes">sketchnotes</a>, 
     
-      <a class="category-link" href="/categories/twimlai">twimlai</a>
+      <a class="category-link" href="https://sumendar.netlify.com/categories/twimlai">twimlai</a>
     
   
 
@@ -533,12 +471,12 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
 <pre class="r"><code>explanation_df %&gt;%
   ggplot(aes(x = model_r2, fill = label)) +
     geom_density(alpha = 0.5)</code></pre>
-<p><img src="/post/2017-12-12_lime_sketchnotes_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="https://sumendar.netlify.com/post/2017-12-12_lime_sketchnotes_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <ul>
 <li>plot explanations</li>
 </ul>
 <pre class="r"><code>plot_features(explanation_df[1:24, ], ncol = 1)</code></pre>
-<p><img src="/post/2017-12-12_lime_sketchnotes_files/figure-html/unnamed-chunk-15-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="https://sumendar.netlify.com/post/2017-12-12_lime_sketchnotes_files/figure-html/unnamed-chunk-15-1.png" width="70%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="session-info" class="section level3">
 <h3>Session Info</h3>
@@ -686,15 +624,15 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="//tags/lime/">LIME</a>
+  <a class="tag tag--primary tag--small" href="https://sumendar.netlify.com//tags/lime/">LIME</a>
 
-  <a class="tag tag--primary tag--small" href="//tags/machine-learning/">machine learning</a>
+  <a class="tag tag--primary tag--small" href="https://sumendar.netlify.com//tags/machine-learning/">machine learning</a>
 
-  <a class="tag tag--primary tag--small" href="//tags/data-science/">data science</a>
+  <a class="tag tag--primary tag--small" href="https://sumendar.netlify.com//tags/data-science/">data science</a>
 
-  <a class="tag tag--primary tag--small" href="//tags/sketchnotes/">sketchnotes</a>
+  <a class="tag tag--primary tag--small" href="https://sumendar.netlify.com//tags/sketchnotes/">sketchnotes</a>
 
-  <a class="tag tag--primary tag--small" href="//tags/twimlai/">twimlai</a>
+  <a class="tag tag--primary tag--small" href="https://sumendar.netlify.com//tags/twimlai/">twimlai</a>
 
                   </div>
                 
@@ -706,7 +644,7 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
         <ul class="post-actions post-action-nav">
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/keras_sketchnotes/" data-tooltip="Registration now open for workshop on Deep Learning with Keras and TensorFlow using R">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sumendar.netlify.com/2017/12/keras_sketchnotes/" data-tooltip="Registration now open for workshop on Deep Learning with Keras and TensorFlow using R">
               
                 <i class="fa fa-angle-left"></i>
                 <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -714,7 +652,7 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2017/11/mice_sketchnotes/" data-tooltip="MICE (Multiple Imputation by Chained Equations) in R - sketchnotes from MünsteR Meetup">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sumendar.netlify.com/2017/11/mice_sketchnotes/" data-tooltip="MICE (Multiple Imputation by Chained Equations) in R - sketchnotes from MünsteR Meetup">
               
                 <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                 <i class="fa fa-angle-right"></i>
@@ -731,19 +669,19 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2017/12/lime_sketchnotes/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sumendar.netlify.com/2017/12/lime_sketchnotes/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2017/12/lime_sketchnotes/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sumendar.netlify.com/2017/12/lime_sketchnotes/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2017/12/lime_sketchnotes/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sumendar.netlify.com/2017/12/lime_sketchnotes/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -778,19 +716,19 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
         </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2018 Dr. Shirin Glander. All Rights Reserved
+    &copy; 2018 Sumendar Karupakala. All Rights Reserved
   </span>
 </footer>
 
       </div>
-      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
         
   <div class="post-actions-wrap">
       <nav >
         <ul class="post-actions post-action-nav">
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/keras_sketchnotes/" data-tooltip="Registration now open for workshop on Deep Learning with Keras and TensorFlow using R">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sumendar.netlify.com/2017/12/keras_sketchnotes/" data-tooltip="Registration now open for workshop on Deep Learning with Keras and TensorFlow using R">
               
                 <i class="fa fa-angle-left"></i>
                 <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -798,7 +736,7 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2017/11/mice_sketchnotes/" data-tooltip="MICE (Multiple Imputation by Chained Equations) in R - sketchnotes from MünsteR Meetup">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sumendar.netlify.com/2017/11/mice_sketchnotes/" data-tooltip="MICE (Multiple Imputation by Chained Equations) in R - sketchnotes from MünsteR Meetup">
               
                 <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                 <i class="fa fa-angle-right"></i>
@@ -815,19 +753,19 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2017/12/lime_sketchnotes/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sumendar.netlify.com/2017/12/lime_sketchnotes/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2017/12/lime_sketchnotes/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sumendar.netlify.com/2017/12/lime_sketchnotes/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2017/12/lime_sketchnotes/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sumendar.netlify.com/2017/12/lime_sketchnotes/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -852,24 +790,24 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
 
 
       </div>
-      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
   <i id="btn-close-shareoptions" class="fa fa-close"></i>
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2017%2F12%2Flime_sketchnotes%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsumendar.netlify.com%2F2017%2F12%2Flime_sketchnotes%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2017%2F12%2Flime_sketchnotes%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsumendar.netlify.com%2F2017%2F12%2Flime_sketchnotes%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2017%2F12%2Flime_sketchnotes%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsumendar.netlify.com%2F2017%2F12%2Flime_sketchnotes%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -885,24 +823,22 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
       <i class="fa fa-remove"></i>
     </div>
     
-      <img id="about-card-picture" src="//www.gravatar.com/avatar/7f7f818e55624edfef8aa93860a1a3d4?s=110" alt="Author&#39;s picture" />
+      <img id="about-card-picture" src="//www.gravatar.com/avatar/f816f6a3f5b14dac82865affafc1bed5?s=110" alt="Author&#39;s picture" />
     
-    <h4 id="about-card-name">Dr. Shirin Glander</h4>
-    
-      <div id="about-card-bio">Biologist turned Bioinformatician turned Data Scientist</div>
+    <h4 id="about-card-name">Sumendar Karupakala</h4>
     
     
       <div id="about-card-job">
         <i class="fa fa-briefcase"></i>
         <br/>
-        Data Scientist
+        Jr. Data Scientist
       </div>
     
     
       <div id="about-card-location">
         <i class="fa fa-map-marker"></i>
         <br/>
-        Münster, Germany
+        Hyderabad
       </div>
     
   </div>
@@ -930,7 +866,7 @@ test_y &lt;- dplyr::select(test_data, class)</code></pre>
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2018/06/googlelanguager/">
+              <a class="link-unstyled" href="https://sumendar.netlify.com/2018/06/googlelanguager/">
                 <h3 class="media-heading">Addendum: Text-to-Speech with the googleLanguageR package</h3>
               </a>
               <span class="media-meta">
@@ -950,7 +886,7 @@ Set up Google Cloud and authentification You first need to set up a Google Cloud
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2018/06/intro_to_ml_workshop_heidelberg/">
+              <a class="link-unstyled" href="https://sumendar.netlify.com/2018/06/intro_to_ml_workshop_heidelberg/">
                 <h3 class="media-heading">Code for Workshop: Introduction to Machine Learning with R</h3>
               </a>
               <span class="media-meta">
@@ -969,7 +905,7 @@ The workshop covered the basics of machine learning. With an example dataset I w
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2018/06/text_to_speech_r/">
+              <a class="link-unstyled" href="https://sumendar.netlify.com/2018/06/text_to_speech_r/">
                 <h3 class="media-heading">Text-to-speech with R</h3>
               </a>
               <span class="media-meta">
@@ -987,7 +923,7 @@ In one of our recent codecentric.AI videos, we compared different Text-to-Speech
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2018/06/keras_fruits_lime/">
+              <a class="link-unstyled" href="https://sumendar.netlify.com/2018/06/keras_fruits_lime/">
                 <h3 class="media-heading">Explaining Keras image classification models with lime</h3>
               </a>
               <span class="media-meta">
@@ -1006,7 +942,7 @@ I have already written a few blog posts (here, here and here) about LIME and hav
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2018/06/twimlai138/">
+              <a class="link-unstyled" href="https://sumendar.netlify.com/2018/06/twimlai138/">
                 <h3 class="media-heading">Sketchnotes from TWiML&amp;AI: Practical Deep Learning with Rachel Thomas</h3>
               </a>
               <span class="media-meta">
@@ -1026,7 +962,7 @@ Sketchnotes from TWiMLAI talk: Practical Deep Learning with Rachel Thomas
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2018/06/keras_fruits/">
+              <a class="link-unstyled" href="https://sumendar.netlify.com/2018/06/keras_fruits/">
                 <h3 class="media-heading">It&#39;s that easy! Image classification with keras in roughly 100 lines of code.</h3>
               </a>
               <span class="media-meta">
@@ -1045,7 +981,7 @@ And I was (again) suprised how fast and easy it was to build the model; it took 
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2018/05/ropensci_unconf18/">
+              <a class="link-unstyled" href="https://sumendar.netlify.com/2018/05/ropensci_unconf18/">
                 <h3 class="media-heading">rOpenSci unconference 2018 &#43; introduction to TensorFlow Probability &amp; the &#39;greta&#39; package</h3>
               </a>
               <span class="media-meta">
@@ -1063,7 +999,7 @@ rOpenSci rOpenSci is a non-profit organisation that maintains a number of widely
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2018/05/deep_learning_keras_tensorflow_18_07/">
+              <a class="link-unstyled" href="https://sumendar.netlify.com/2018/05/deep_learning_keras_tensorflow_18_07/">
                 <h3 class="media-heading">July 5th &amp; 6th in Münster: Workshop on Deep Learning with Keras and TensorFlow in R</h3>
               </a>
               <span class="media-meta">
@@ -1085,7 +1021,7 @@ You can read about one participant’s experience in my last workshop:
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2018/05/twimlai_adversarial_attacks/">
+              <a class="link-unstyled" href="https://sumendar.netlify.com/2018/05/twimlai_adversarial_attacks/">
                 <h3 class="media-heading">Sketchnotes from TWiML&amp;AI: Adversarial Attacks Against Reinforcement Learning Agents with Ian Goodfellow &amp; Sandy Huang</h3>
               </a>
               <span class="media-meta">
@@ -1105,7 +1041,7 @@ Sketchnotes from TWiMLAI talk: Adversarial Attacks Against Reinforcement Learnin
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2018/04/pkgnet/">
+              <a class="link-unstyled" href="https://sumendar.netlify.com/2018/04/pkgnet/">
                 <h3 class="media-heading">Comparing dependencies of popular machine learning packages with `pkgnet`</h3>
               </a>
               <span class="media-meta">
@@ -1136,7 +1072,7 @@ Sketchnotes from TWiMLAI talk: Adversarial Attacks Against Reinforcement Learnin
     
   
     
-    <div id="cover" style="background-image:url('/images/autumn-2789234_1920.jpg');"></div>
+    <div id="cover" style="background-image:url('https://sumendar.netlify.com/images/autumn-2789234_1920.jpg');"></div>
   
 
 
@@ -1147,7 +1083,7 @@ Sketchnotes from TWiMLAI talk: Adversarial Attacks Against Reinforcement Learnin
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js" integrity="sha256-N0qFUh7/9vLvia87dDndewmsgsyYoNkdA212tPc+2NI=" crossorigin="anonymous"></script>
 
 
-<script src="/js/script-kr8dyqj6rb6ortyib7whfo9x9p6td6zo8t1v4fdz4ecx5kwybsdlmk1slygn.min.js"></script>
+<script src="https://sumendar.netlify.com/js/script-kr8dyqj6rb6ortyib7whfo9x9p6td6zo8t1v4fdz4ecx5kwybsdlmk1slygn.min.js"></script>
 
 
 <script>
@@ -1166,7 +1102,7 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = '\/2017\/12\/lime_sketchnotes\/';
+          this.page.url = 'https:\/\/sumendar.netlify.com\/2017\/12\/lime_sketchnotes\/';
           
             this.page.identifier = '\/2017\/12\/lime_sketchnotes\/'
           
@@ -1178,7 +1114,7 @@ $(document).ready(function() {
             return;
           }
           var d = document, s = d.createElement('script');
-          var disqus_shortname = 'shirinsplayground';
+          var disqus_shortname = 'sumendar';
           s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 
           s.setAttribute('data-timestamp', +new Date());
